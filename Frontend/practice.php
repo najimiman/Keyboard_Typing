@@ -28,14 +28,14 @@
   </script>
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-
 <body>
-  <div class="container py-28 px-60">
+
+  <div class="container pt-28 px-20 xl:px-60">
     <div class="flex flex-col justify-center items-center">
       <div class="mx-auto">
         <img src="./assets/images/heading.svg" alt="" width="400px">
       </div>
-      <div class="border border-black p-8 mt-12" id="text-box">
+      <div class="border border-black p-8 mt-12 h-36 text-2xl" id="text-box">
         Lorem ipsum dolor sit amet. A veritatis quia temporibus internos ut consequatur dolorum ut ipsam voluptatem qui repellendus galisum ab ipsam ullam.
       </div>
 
@@ -65,7 +65,26 @@
       </div>
     </div>
   </div>
+  <div class="absolute top-0 right-0">
+    <img src="./assets/images/overlay_1.png" alt="" width="200px">
+  </div>
+  <div class="absolute top-12 right-0">
+    <img src="./assets/images/overlay_4.png" alt="" width="200px">
+  </div>
+  <div class="absolute top-6 left-0">
+    <img src="./assets/images/overlay_3.png" alt="" width="200px">
+  </div>
+  <div class="absolute top-60 left-0">
+    <img src="./assets/images/overlay_5.png" alt="" width="130px">
+  </div>
+  <div class="absolute bottom-0 left-0">
+    <img src="./assets/images/overlay_2.png" alt="" width="200px">
+  </div>
+  <div class="absolute bottom-0 right-0">
+    <img src="./assets/images/overlay_6.png" alt="" width="200px">
+  </div>
 
-<script src="./assets/js/main.js"></script>
+
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
