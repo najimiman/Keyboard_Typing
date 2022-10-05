@@ -50,8 +50,8 @@
 					$rows = [
 						['a', 'z', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
 						['q', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm'],
-						['w', 'x', 'c', 'v', 'b', 'n', '\''],
-						[',', '.', ';', ':', '-', '_']
+						['w', 'x', 'c', 'v', 'b', 'n', '\'', ','],
+						['.', ';', ':', '-', '_', '!', '?']
 					];
 
 					foreach ($rows as $keys) :
@@ -66,7 +66,10 @@
 							<?php endforeach ?>
 						</div>
 					<?php endforeach ?>
-					<div id="key- " class="bg-white h-8 pb-2 pr-6 pl-1 pt-0.5 border border-black rounded-md w-full" keyboard-key></div>
+					<div class="px-8 w-full">
+					<div id="key- " class="bg-white h-8 pb-2 pr-6 pl-1 pt-0.5 border border-black rounded-md" keyboard-key></div>
+
+					</div>
 				</div>
 			</div>
 		</div>

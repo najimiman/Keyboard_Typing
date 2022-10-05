@@ -1,10 +1,9 @@
 document.onkeydown = function (e) {
-    let pressedKey = e.key;
-    let textBox = document.getElementById("text-box");
-    let regEx = new RegExp(
-        `^(${!window.typedText ? pressedKey : window.typedText + pressedKey})`.replaceAll('.', '\\.')
+    const pressedKey = e.key;
+    const textBox = document.getElementById("text-box");
+    const regEx = new RegExp(
+        `^(${!window.typedText ? pressedKey : window.typedText + pressedKey})`.replaceAll('.', '\\.').replaceAll('?', '\\?')
     );
-    console.log(regEx)
     
     if (textBox.innerText.match(regEx)) {
         document
@@ -39,13 +38,6 @@ document.onkeyup = () => {
 window.onload = () => {
     setInterval(() => document.getElementById('timer').innerText == 0 ?clearInterval(this): document.getElementById('timer').innerText -= 1, 1000)
     getRandomText();
-
-    // setInterval(() => {
-    //     document.querySelectorAll("[keyboard-key]").forEach((elem) => {
-    //         elem.style.backgroundColor = '#' +  Math.floor(Math.random()*16777215).toString(16);
-    //     });
-    // }, 300)
-
 };
 
 function getRandomText() {
